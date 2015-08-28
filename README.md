@@ -18,7 +18,7 @@ Select/click a menu option to change the feed information
 * title value changes after loading
 
 
-#References:
+##References:
 
 Jasmine on Github
 Unit Testing JavaScript Using Jasmine
