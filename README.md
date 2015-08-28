@@ -1,28 +1,23 @@
-Project 6 Feed REader Testing
+Project 6 Feed Reader Testing
 Running instructions:
 
-visit my githubpage(http://mahoneyz/)
-Load page
+Go to my githubpage(http://mahoneyz.github.io/P6_Feed-Reader-Testing/)
+
 Click on hamburger menu icon to unhide then click again hide menu
 Select/click a menu option to change the feed information
 Tests Conducted are
 
-RSS Feed(s)
-are defined
-URLs defined
-names defined
-The menu
-menu starts hidden
-displays when clicked
-second click makes it hidded
-Initial Entries
-the "feed" div contains at least one entry after loadFeed function completes its work
-New Feed Selection
-information changes after loading
-References Used:
+RSS Feed is defined
+RSS URLs are defined
+RSS names are defined
+menu is hidden by default
+menu's visibility toggles when clicked
+there is at least one feed loaded
+title value changes after loading
+
+
+References:
 
 Jasmine on Github
-Testing your Javasript with Jamine
-How do I do Jamine
 Unit Testing JavaScript Using Jasmine
 HTMLGoodies - Testing JavaScript Using the Jasmine Framework
