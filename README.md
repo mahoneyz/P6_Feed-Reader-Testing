@@ -4,8 +4,8 @@
 
 Go to my githubpage(http://mahoneyz.github.io/P6_Feed-Reader-Testing/)
 
-Click on hamburger menu icon to unhide then click again hide menu
-Select/click a menu option to change the feed information
+Click on 3 bar menu icon on the upper left to unhide then click again hide menu
+Select/click a menu option to change the feed information.
 
 ###Tests Conducted are
 
