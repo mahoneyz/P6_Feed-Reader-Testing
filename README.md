@@ -1,13 +1,13 @@
 #Project 6 Feed Reader Testing
 
-##Running instructions:
+###Running instructions:
 
 Go to my githubpage(http://mahoneyz.github.io/P6_Feed-Reader-Testing/)
 
 Click on hamburger menu icon to unhide then click again hide menu
 Select/click a menu option to change the feed information
 
-##Tests Conducted are
+###Tests Conducted are
 
 * RSS Feed is defined
 * RSS URLs are defined
@@ -18,8 +18,8 @@ Select/click a menu option to change the feed information
 * title value changes after loading
 
 
-##References:
+###References:
 
-Jasmine on Github
-Unit Testing JavaScript Using Jasmine
-HTMLGoodies - Testing JavaScript Using the Jasmine Framework
+* Jasmine on Github
+* Unit Testing JavaScript Using Jasmine
+* HTMLGoodies - Testing JavaScript Using the Jasmine Framework
