@@ -20,13 +20,12 @@ $(function() {
          * and that the URL is not empty.
          */
 
-         it('URLs are defined', function() {
+        it('URLs are defined', function() {
             for (var i = 0; i < allFeeds.length; i++) {
                 expect(allFeeds[i].url).toBeDefined();
                 expect(allFeeds[i].url.length).not.toBe(0);
             }
-
-         });
+        });
 
 
         /* Test that loops through each feed
@@ -72,38 +71,35 @@ $(function() {
 
          //use beforeEach to wait for async call to finish
          beforeEach(function(done) {
-            loadFeed(0, function() {
-                done();
-            });
+            loadFeed(0, done)
          });
 
          // Make sure feeds are loaded
-        it('there is at least one feed loaded', function(done) {
+        it('there is at least one feed loaded', function() {
             var feeddiv = $('.feed').children().length;
             expect(feeddiv).toBeDefined();
             expect(feeddiv).toBeGreaterThan(0); // has at least one entry
-            done();
         });
 
     });
 
     describe('New Feed Selection', function() {
-        /* Test that ensures when a new feed is loaded
-         * by the loadFeed function that the content actually changes.*/
+        /* Test that ensures when a new feed is loaded by the loadFeed
+        *  function that the content actually changes.*/
 
-        var beforetitle;
+        var beforetitle, afterTitle;
         beforeEach(function(done) {
-            beforetitle = $('h2').text();
-            //alert('beforetitle: ' + beforetitle);
-            loadFeed(1, done);
+            loadFeed(0, function() {
+                beforetitle = $(".feed").html();
+            });
+            loadFeed(1, function() {
+                afterTitle = $(".feed").html();
+                done();
+            });
         });
 
-        // Feed changes after a new selection is made
+        /* makes sure the values are different */
         it('title value changes after loading', function(done) {
-            var afterTitle = $('h2').text();
-            //alert('afterTitle: ' + afterTitle);
-            expect(afterTitle).toBeDefined();
-            expect(afterTitle).not.toBe("");
             expect(afterTitle).not.toBe(beforetitle);
             done();
         });
